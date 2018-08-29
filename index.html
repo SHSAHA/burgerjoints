@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="./css/style.css">
+
+<style >
+
+.map{
+	height: 400px;
+    width: 100%;
+}
+
+	
+.venues{
+	padding-top: 24px;
+}
+.column1 {
+  float: left;
+  width: 25%;
+  padding: 5px;
+  padding-left: 40px;
+}
+.column2 {
+  float: left;
+  width: 25%;
+  padding: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  
+}
+
+.column3 {
+  float: left;
+  width: 25%;
+  padding: 5px;
+  padding-top: 5px;
+  
+}
+.column4 {
+  float: left;
+  width: 25%;
+  padding: 5px;
+  padding-right: 40px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+
+
+
+	<title>Venues</title>
+
+</head>
+<body>
+
+	<div class="venues">
+	<h3 style="padding-left: 24px">Venues</h3>
+    </div>
+     <div id="map"></div>
+    <script>
+      function initMap() {
+         var location = {lat: 58.377983,lng: 26.729038	};
+         var map = new google.maps.Map(document.getElementById("map"),{
+         	zoom:16,
+         	center: location
+         });
+  
+
+    }    
+    </script>
+   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBo0YlXkoY9P5-sK1dHUzL7JO3incOgZNE
+    &callback=initMap"
+  type="text/javascript"></script>
+
+	<div class="row">
+  <div class="column1">
+    <img src="1.jpeg" alt="burger" style="width:100% ">
+  </div>
+  <div class="column2">
+    <img src="5.jpeg" alt="burger" style="width:100%" height="176">
+  </div>
+  <div class="column3">
+    <img src="6.jpeg" alt="burger" style="width:100%" height="176">
+  </div>
+  <div class="column4">
+    <img src="4.jpeg" alt="burger" style="width:100%">
+  </div>
+
+  <div class="row">
+  <div class="column1">
+    <img src="2.jpeg" alt="burger" style="width:100% " height="176">
+  </div>
+  <div class="column2">
+    <img src="7.jpeg" alt="burger" style="width:100%" height="176">
+  </div>
+  <div class="column3">
+    <img src="10.jpeg" alt="burger" style="width:100%" height="176">
+  </div>
+  <div class="column4">
+    <img src="9.jpeg" alt="burger" style="width:100%" height="176">
+  </div>
+
+  <div class="row">
+  <div class="column1">
+    <img src="1.jpeg" alt="burger" style="width:100%">
+  </div>
+  <div class="column2">
+    <img src="5.jpeg" alt="burger" style="width:100%" height="170">
+  </div>
+  <div class="column3">
+    <img src="6.jpeg" alt="burger" style="width:100%" height="170">
+  </div>
+  <div class="column4">
+    <img src="4.jpeg" alt="burger" style="width:100%">
+  </div>
+</div>
+
+		
+	
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</div>
+</body>
+</html>
